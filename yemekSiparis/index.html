@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <title>Restorant Menü</title>    
+</head>
+<body>
+    <header>       
+        <h2>RESTORANT</h2>
+        <h3><a href="index.html">Menü</a></h3>
+        <h3><a href="manage.html">Yönetim</a></h3>   
+    </header>
+
+    <div class = "container">
+        <div class = "food">
+            <img src = "images/corba.jpg" alt="food0">
+            <h3>Çorba</h3>
+            <h3>10₺</h3>
+            <a class = "add-food food1" href ="#">Seç</a>
+        </div>
+
+        <div class = "food">
+            <img src = "images/manti.jpg" alt="food0">
+            <h3>Mantı</h3>
+            <h3>15₺</h3>
+            <a class = "add-food food2" href ="#">Seç</a>
+        </div>
+
+        <div class = "food">
+            <img src = "images/wrap.jpg" alt="food0">
+            <h3>Tavuklu Wrap</h3>
+            <h3>25₺</h3>
+            <a class = "add-food food3" href ="#">Seç</a>
+        </div>
+
+        <div class = "food">
+            <img src = "images/kunefe.jpg" alt="food0">
+            <h3>Künefe</h3>
+            <h3>12₺</h3>
+            <a class = "add-food food4" href ="#">Seç</a>
+        </div>
+
+        <div class = "food">
+            <img src = "images/meyve_suyu.jpg" alt="food0">
+            <h3>Meyve Suyu</h3>
+            <h3>5₺</h3>
+            <a class = "add-food food5" href ="#">Seç</a>
+        </div>
+
+        <div class = "food">
+            <img src = "images/cay.jpg" alt="food0">
+            <h3>Çay</h3>
+            <h3>5₺</h3>
+            <a class = "add-food food6" href ="#">Seç</a>
+        </div>
+    </div>
+
+    <button class = "ordered " id = "ordered" onclick="orderOk()">Siparişi Kaydet</button>
+
+    <div class = "foodProgress"> 
+        <h2>Sipariş Takip</h2>  
+        <div class = progress>    
+            <div id="output"></div>         
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="manage.html"></script>
+
+</body>
+</html>

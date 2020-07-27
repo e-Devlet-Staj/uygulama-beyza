@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <title>Restorant Menü</title>
+    
+</head>
+<body>
+    <header>
+        <div class="navbar"> </div>
+        <nav>
+            <h2>RESTORANT</h2>
+            <h3><a href="index.html">Menü</a></h3>
+            <h3><a href="manage.html">Yönetim</a></h3>           
+        </nav>
+    </header>     
+
+    <div class="foodsContainer">
+        <div class="foodHeader">
+            <h5 class="foodTitle">Sipariş</h5>
+            <h5 class="price">Ücret</h5>
+            <h5 class="quantity">Sayı</h5>
+            <h5 class="total">Toplam Ücret</h5>
+        </div>
+        <div class="foods"> </div>
+    </div>
+
+    <button class = "displayed" id = "displayed" onclick="viewFood()">Siparişleri Görüntüle</button>
+
+    <button class = "processing" id = "processing" onclick="progressing()">Siparişler Hazırlanıyor</button>
+
+    <button class = "ıtsOk" id = "ıtsOk" onclick="viewMoney()">Siparişler Hazır</button> 
+
+    <button class = "cleaned" id = "cleaned" onclick="cleaned()">Siparişleri Sil</button> 
+
+    <div class = "foodProgress"> 
+        <h2>Sipariş Takip</h2>  
+        <div class = progress>    
+            <div id="output"></div>         
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
